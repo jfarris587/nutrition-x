@@ -1,0 +1,22 @@
+.diary{
+  width: 100%;
+
+  .entries {
+    margin-bottom: 25px;
+    width: 100%;
+
+  }
+
+  .totals{
+    margin-bottom: 25px;
+  }
+
+  .remaining{
+    margin-bottom: 25px;
+
+    .entry{
+      background:#ffc1c1;
+    }
+  }
+
+}

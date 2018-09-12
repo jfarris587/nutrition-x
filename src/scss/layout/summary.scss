@@ -1,0 +1,57 @@
+section.summary{
+  height: 100vh;
+  background: $secondary-gray;
+  width: calc(100% - 350px);
+  margin-left: 350px;
+  padding: 75px 85px;
+  box-sizing: border-box;
+
+  .title{
+    width: 100%;
+    margin: 0 auto;
+    border-bottom: 3px solid #eee;
+    padding-bottom: 50px;
+
+    h1{
+      text-transform: uppercase;
+      font-size: 2.5rem;
+      font-weight: 400;
+      float: left;
+      width: 100%;
+      position: relative;
+
+
+      span{
+        float: right;
+        font-size: 1.3rem;
+        font-weight: 700;
+        text-transform: uppercase;
+
+        position: absolute;
+        bottom: 0;
+        right: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 1300px){
+  section.summary{
+    margin: 0;
+    width: 100%;
+  }
+}
+
+@media (max-width: 800px){
+  section.summary{
+    padding: 45px 45px;
+
+  }
+}
+
+@media (max-width: 700px){
+  section.summary{
+    padding: 25px 25px;
+
+  }
+}

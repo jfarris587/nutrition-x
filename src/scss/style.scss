@@ -1,0 +1,36 @@
+@import "base/variables.scss";
+
+@import "layout/menu.scss";
+@import "layout/summary.scss";
+@import "layout/diary.scss";
+@import "layout/navigation.scss";
+
+@import "components/entry.scss";
+@import "components/category.scss";
+@import "components/button.scss";
+@import "components/check.scss";
+
+html{
+  font-size: 10px;
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  padding: 0;
+  margin: 0;
+  font-family: 'Nunito', sans-serif;
+  text-rendering: optimizeLegibility;
+  color: $text-blue;
+  letter-spacing: .04rem;
+}
+
+
+h1,h2,h3,h4,h5,h6,p{
+  margin: 0;
+  padding: 0;
+}
+
+#root{
+  position: relative;
+}

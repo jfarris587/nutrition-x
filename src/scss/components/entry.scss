@@ -1,0 +1,40 @@
+.entry{
+  width: 100%;
+  height: 70px;
+  border-radius: 3px;
+  margin: 5px 0;
+  background: rgba(255, 255, 255, .80);
+  box-shadow:  0px 0 35px 2px rgba(0, 0, 0, .03);
+  position: relative;
+
+  &-detail {
+    width: 10%;
+    height: 70px;
+    font-size: 1.2rem;
+    line-height: 70px;
+    float: left;
+    text-align: center;
+    padding: 0 5px;
+  }
+
+  .name{
+    margin-left: 20px;
+  }
+
+  .check{
+    width: 25px;
+    height: 25px;
+    margin-left: 25px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    padding: 0px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+  }
+
+  .cal, .carb, .fat, .protein, .sugar{
+    float: right;
+  }
+}
