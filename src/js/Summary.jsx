@@ -6,7 +6,7 @@ const Summary = (props) => {
     <section className="summary">
       <div className="title">
         <h1>
-          Top Level Heading
+          DAILY FOOD TRACKER
           <span>Wednesday, 12 August</span>
         </h1>
       </div>

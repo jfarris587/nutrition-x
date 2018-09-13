@@ -4,41 +4,36 @@ import Category from "./components/Category.jsx"
 const Menu = (props) => {
   return (
     <section className="menu">
-      <div className="add-category">add another category</div>
+      <div className="add-category">nutrition x</div>
 
       <div className="categories">
         <Category
           selected={false}
-          heading={"Heading Here"}
+          heading={"Breakfast"}
           info={"Informatio here"}
           text={"more text goes here"}
-          nutrition={null}
-        />
+          nutrition={null}  />
 
         <Category
           selected={true}
-          heading={"Heading Here"}
+          heading={"Lunch"}
           info={"Informatio here"}
           text={"more text goes here"}
-          nutrition={null}
-
-        />
+          nutrition={null}  />
 
         <Category
           selected={false}
-          heading={"Heading Here"}
+          heading={"Dinner"}
           info={"Informatio here"}
           text={"more text goes here"}
-          nutrition={null}
-        />
+          nutrition={null} />
 
         <Category
           selected={false}
-          heading={"Heading Here"}
+          heading={"Snack"}
           info={"Informatio here"}
           text={"more text goes here"}
-          nutrition={null}
-        />
+          nutrition={null}  />
 
       </div>
     </section>

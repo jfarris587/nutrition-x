@@ -1,5 +1,5 @@
 section.summary{
-  height: 100vh;
+  min-height: 100vh;
   background: $secondary-gray;
   width: calc(100% - 350px);
   margin-left: 350px;
@@ -35,7 +35,7 @@ section.summary{
   }
 }
 
-@media (max-width: 1300px){
+@media (max-width: 1200px){
   section.summary{
     margin: 0;
     width: 100%;

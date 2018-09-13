@@ -1,5 +1,5 @@
 section.menu{
-  height: 100vh;
+  min-height: 100vh;
   background: $primary-gray;
   width: 350px;
   float: left;
@@ -19,7 +19,7 @@ section.menu{
   }
 }
 
-@media (max-width: 1300px){
+@media (max-width: 1200px){
   section.menu{
     display: none;
   }
