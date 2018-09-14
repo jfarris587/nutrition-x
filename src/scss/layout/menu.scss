@@ -4,6 +4,14 @@ section.menu{
   width: 350px;
   float: left;
   overflow: hidden;
+  position: absolute;
+  z-index: 1;
+  left: -350px;
+  transition: all .4s ease;
+
+  &.toggled{
+    left: 0;
+  }
 
   .add-category{
     width: 100%;
@@ -15,12 +23,5 @@ section.menu{
     font-size: 1.6rem;
     font-weight: 500;
     line-height: 7.5rem;;
-    cursor: pointer;
-  }
-}
-
-@media (max-width: 1200px){
-  section.menu{
-    display: none;
   }
 }

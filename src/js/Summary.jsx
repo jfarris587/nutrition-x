@@ -2,8 +2,21 @@ import React from "react";
 import Diary from "./Diary.jsx";
 
 const Summary = (props) => {
+  var toggled = "";
+
+  if(props.toggled === true){
+    toggled = "toggled";
+  }
+
+
   return (
-    <section className="summary">
+    <section className={"summary " + toggled}>
+      <div className={"menu-toggler " + toggled} onClick={props.toggleMenu}>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+
       <div className="title">
         <h1>
           DAILY FOOD TRACKER
@@ -12,14 +25,17 @@ const Summary = (props) => {
       </div>
 
       <div className="navigation">
-        <button class="button trash"><i class="fas fa-trash-alt"></i></button>
-        <button class="button">Testing</button>
-        <button class="button">Click Me</button>
+        <button className="button trash"><i className="fas fa-trash-alt"></i></button>
+        <button className="button">Testing</button>
+        <button className="button">Click Me</button>
 
-        <button class="button add"><i class="fas fa-plus"></i></button>
+        <button className="button add"><i className="fas fa-plus"></i></button>
       </div>
 
-      <Diary />
+      <Diary
+        diary = {props.diary}
+        selectedCategory = {props.selectedCategory}
+      />
     </section>
   );
 }

@@ -1,6 +1,8 @@
 .diary{
   width: 100%;
 
+  
+
   .entries {
     margin-bottom: 25px;
     width: 100%;
@@ -16,7 +18,16 @@
 
     .entry{
       background:#ffc1c1;
+      color: #a87777;
     }
+  }
+
+  .totals{
+
+  }
+
+  .daily{
+    color: #7da1fc;
   }
 
 }

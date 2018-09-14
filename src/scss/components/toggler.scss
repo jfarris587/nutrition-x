@@ -1,0 +1,19 @@
+.menu-toggler{
+  position: absolute;
+  transition: all .4s ease;
+  left: 10px;
+  top: 10px;
+
+  &.toggled{
+    top: 10px;
+    left: 360px;
+  }
+
+  div{
+    width: 25px;
+    height: 3px;
+    border-radius: 10px;
+    background-color: $primary-black;
+    margin-bottom: 5px;
+  }
+}

@@ -10,12 +10,22 @@ const CategoryDetails = (props) => {
   else{
     return (
       <div className="category-details">
-        <div className="detail carb">{props.carb}</div>
-        <div className="detail fat">{props.fat}</div>
-        <div className="detail protein">{props.protein}</div>
+        <div className="detail carb">{calculateMacro(props.diary[props.category.toLowerCase()], "carb")}</div>
+        <div className="detail fat">{calculateMacro(props.diary[props.category.toLowerCase()], "fat")}</div>
+        <div className="detail protein">{calculateMacro(props.diary[props.category.toLowerCase()], "protein")}</div>
       </div>
     );
   }
+}
+
+const calculateMacro = (c, m) =>{
+  var total = 0;
+
+  c.food.forEach(function(obj){
+   total += obj[m];
+ });
+
+ return total;
 }
 
 

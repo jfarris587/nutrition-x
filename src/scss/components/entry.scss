@@ -10,15 +10,28 @@
   &-detail {
     width: 10%;
     height: 70px;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
+    font-weight: 700;
     line-height: 70px;
     float: left;
-    text-align: center;
-    padding: 0 5px;
+    text-align: left;
+    padding: 0 0px;
+
+    .icon{
+      width: 6px;
+      height: 6px;
+      background: $primary-black;
+      border-radius: 100%;
+      display: inline-block;
+      margin: 0 10px 1.5px -10px;
+    }
   }
 
   .name{
     margin-left: 20px;
+    padding-left: 35px;
+    width: 20%
+
   }
 
   .check{
@@ -36,5 +49,15 @@
 
   .cal, .carb, .fat, .protein, .sugar{
     float: right;
+  }
+
+  .carb .icon{
+    background: #ffc85c;
+  }
+  .fat .icon{
+    background: #fe6f70;
+  }
+  .protein .icon{
+    background: #477bff;
   }
 }

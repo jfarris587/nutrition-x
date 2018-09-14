@@ -2,39 +2,29 @@ import React from "react";
 import Category from "./components/Category.jsx"
 
 const Menu = (props) => {
+  var categories = ["Breakfast", "Lunch", "Dinner", "Snack"];
+  var toggled = "";
+
+  if(props.toggled === true){
+    toggled = "toggled";
+  }
+
   return (
-    <section className="menu">
+    <section className={"menu " + toggled}>
       <div className="add-category">nutrition x</div>
 
       <div className="categories">
-        <Category
-          selected={false}
-          heading={"Breakfast"}
-          info={"Informatio here"}
-          text={"more text goes here"}
-          nutrition={null}  />
-
-        <Category
-          selected={true}
-          heading={"Lunch"}
-          info={"Informatio here"}
-          text={"more text goes here"}
-          nutrition={null}  />
-
-        <Category
-          selected={false}
-          heading={"Dinner"}
-          info={"Informatio here"}
-          text={"more text goes here"}
-          nutrition={null} />
-
-        <Category
-          selected={false}
-          heading={"Snack"}
-          info={"Informatio here"}
-          text={"more text goes here"}
-          nutrition={null}  />
-
+        {categories.map((category, index) => (
+          <Category
+            key={index}
+            selected={index === categories.indexOf(props.selected)}
+            heading={categories[index]}
+            info={"Information here"}
+            text={"more text goes here"}
+            diary={props.diary}
+            selectCategory={props.selectCategory}
+          />
+        ))}
       </div>
     </section>
   );
