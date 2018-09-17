@@ -41,6 +41,13 @@ section.summary{
   }
 }
 
+@media (max-width: 900px){
+  section.summary.toggled{
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
 
 @media (max-width: 800px){
   section.summary{
@@ -51,7 +58,20 @@ section.summary{
 
 @media (max-width: 700px){
   section.summary{
-    padding: 25px 25px;
+    padding: 45px 25px;
+  }
+}
 
+@media (max-width: 500px){
+  section.summary{
+    padding: 45px 10px;
+  }
+
+  .title h1 {
+    text-align: center;
+
+    span{
+      display: none;
+    }
   }
 }

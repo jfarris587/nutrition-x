@@ -31,7 +31,6 @@
     margin-left: 20px;
     padding-left: 35px;
     width: 20%
-
   }
 
   .check{
@@ -60,4 +59,26 @@
   .protein .icon{
     background: #477bff;
   }
+}
+
+@media (max-width: 500px){
+  section.summary.toggled{
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .title h1 span{
+    display: none;
+  }
+
+  .entry{
+    .entry-detail{
+      width: 15%;
+    }
+    .name{
+      margin-left: 10px;
+      padding-left: 5px;
+    }
+  }
+
 }

@@ -1,42 +1,48 @@
 export default
 {
   goals:{
-    cal: 2500,
-    carb: 600,
-    fat: 150,
-    protein: 250
+    cal: 3000,
+    carb: 240,
+    fat: 170,
+    protein: 165
+  },
+  total:{
+    cal:null,
+    carb:null,
+    fat:null,
+    protein:null
   },
   breakfast:
   {
-    cal:500,
-    carb:24,
-    fat:34,
-    protein:7,
+    cal:null,
+    carb:null,
+    fat:null,
+    protein:null,
     food:[{
   		name: "mauris",
-  		cal: 469,
-  		carb: 92,
+  		cal: 200,
+  		carb: 12,
   		fat: 25,
-  		protein: 60
+  		protein: 20
   	},
   	{
   		name: "Duis",
-  		cal: 527,
+  		cal: 300,
   		carb: 22,
-  		fat: 45,
+  		fat: 20,
   		protein: 29
   	},
   	{
   		name: "Etiam",
   		cal: 563,
-  		carb: 102,
+  		carb: 52,
   		fat: 12,
   		protein: 19
   	},
   	{
   		name: "vitae",
   		cal: 270,
-  		carb: 115,
+  		carb: 5,
   		fat: 21,
   		protein: 9
   	},
@@ -45,22 +51,22 @@ export default
 
   lunch:
   {
-    cal:800,
-    carb:234,
-    fat:43,
-    protein:76,
+    cal:null,
+    carb:null,
+    fat:null,
+    protein:null,
     food:[{
   		name: "mauris",
   		cal: 469,
   		carb: 92,
   		fat: 25,
-  		protein: 60
+  		protein: 10
   	},
   	{
   		name: "Duis",
   		cal: 527,
   		carb: 22,
-  		fat: 45,
+  		fat: 12,
   		protein: 29
   	}
     ]
@@ -68,14 +74,14 @@ export default
 
   dinner:
   {
-    cal:450,
-    carb:90,
-    fat:40,
-    protein:23,
+    cal:null,
+    carb:null,
+    fat:null,
+    protein:null,
     food:[{
   		name: "mauris",
   		cal: 469,
-  		carb: 92,
+  		carb: 32,
   		fat: 25,
   		protein: 60
   	}
@@ -84,10 +90,10 @@ export default
 
   snack:
   {
-    cal:400,
-    carb:39,
-    fat:23,
-    protein:7,
+    cal:null,
+    carb:null,
+    fat:null,
+    protein:null,
     food:[
 
     ]

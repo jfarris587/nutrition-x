@@ -1,0 +1,54 @@
+.addition{
+
+  .add-detail{
+    width: 15%;
+    height: 40px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 70px;
+    text-align: center;
+    padding: 0 0px;
+    outline: none;
+    float: none;
+    border: 1px solid $primary-gray;
+    border-radius: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    position: relative;
+    margin: 0 5px;
+
+    &::placeholder{
+      color: #d0d0d0;
+    }
+
+    &::-webkit-inner-spin-button,
+    &::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      margin: 0;
+    }
+  }
+
+  .name{
+    margin-left: 10%;
+  }
+
+
+  &:hover{
+    .diary{
+      opacity: .35;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .addition{
+    .add-detail{
+      width: 19%;
+      margin: 0;
+      padding: 0;
+      text-align: left;
+    }
+  }
+}

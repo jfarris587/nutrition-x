@@ -25,3 +25,10 @@ section.menu{
     line-height: 7.5rem;;
   }
 }
+
+@media (max-width: 500px){
+  section.menu{
+    width: 225px;
+    left: -225x;
+  }
+}

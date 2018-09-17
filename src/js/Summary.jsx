@@ -26,7 +26,7 @@ const Summary = (props) => {
 
       <div className="navigation">
         <button className="button trash"><i className="fas fa-trash-alt"></i></button>
-        <button className="button add" onClick={()=>alert("SDF")}><i className="fas fa-plus"></i></button>
+        <button className="button add" onClick={()=>{props.addFood(props.selectedCategory)}}><i className="fas fa-plus"></i></button>
       </div>
 
       <Diary

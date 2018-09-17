@@ -10,6 +10,7 @@
 @import "components/button.scss";
 @import "components/check.scss";
 @import "components/toggler.scss";
+@import "components/add.scss";
 
 html{
   font-size: 10px;
@@ -36,4 +37,10 @@ h1,h2,h3,h4,h5,h6,p{
 #root{
   position: relative;
   background: $primary-gray;
+}
+
+@media (max-width: 500px){
+  html{
+    font-size: 9px;
+  }
 }
