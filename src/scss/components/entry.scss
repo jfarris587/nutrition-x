@@ -61,6 +61,14 @@
   }
 }
 
+.entries .entry.deleting:not(:first-child){
+  &:hover{
+    outline: none;
+    //border:  rgb(213, 61, 61);
+    box-shadow: 0 0 3px 0 rgb(213, 61, 61);
+  }
+}
+
 @media (max-width: 500px){
   section.summary.toggled{
     width: 100%;

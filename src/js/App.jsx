@@ -11,7 +11,8 @@ class App extends Component {
       date: null,
       diary: Settings,
       selected:"Lunch",
-      toggled: true
+      toggled: true,
+      deleting: false
     };
   }
 
@@ -115,6 +116,28 @@ class App extends Component {
     this.setState(tempState);
   }
 
+  deleteEntry = () =>{
+    var element = document.getElementsByClassName("trash")[0];
+    element.classList.toggle("selected");
+    var entries = document.getElementsByClassName("entry");
+
+    for (var i = 0; i < entries.length; i++) {
+      entries[i].classList.toggle("deleting");
+    }
+
+    var tempState = this.state;
+    tempState.deleting = !tempState.deleting;
+    this.setState(tempState);
+  }
+
+  selectEntry = (c, i) => {
+    if(this.state.deleting === true){
+      var tempState = this.state;
+      tempState.diary[c].food.splice(i, 1);
+      this.setState(tempState);
+    }
+  }
+
   render() {
     if(this.state == null){
       return null;
@@ -134,6 +157,8 @@ class App extends Component {
             diary = {this.state.diary}
             selectedCategory = {this.state.selected.toLowerCase()}
             addFood = {this.addFood}
+            selectEntry = {this.selectEntry}
+            deleteEntry = {this.deleteEntry}
           />
         </React.Fragment>
       );

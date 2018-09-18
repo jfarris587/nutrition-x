@@ -16,13 +16,14 @@ const Menu = (props) => {
       <div className="categories">
         {categories.map((category, index) => (
           <Category
-            key={index}
-            selected={index === categories.indexOf(props.selected)}
-            heading={categories[index]}
-            info={"Information here"}
-            text={"more text goes here"}
-            diary={props.diary}
-            selectCategory={props.selectCategory}
+            key = {index}
+            selected = {index === categories.indexOf(props.selected)}
+            heading = {categories[index]}
+            info = {"Information here"}
+            text = {"more text goes here"}
+            diary = {props.diary}
+            selectCategory = {props.selectCategory}
+            selectEntry = {props.selectEntry}
           />
         ))}
       </div>

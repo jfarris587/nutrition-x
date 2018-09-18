@@ -17,6 +17,18 @@
 .trash{
   padding: 15px 20px;
   opacity: .5;
+  border: 1px solid #fff;
+
+  &:hover{
+    opacity: 1;
+  }
+
+  &.selected{
+    opacity: 1;
+    outline: none;
+    border-color: rgb(213, 61, 61);
+    box-shadow: 0 0 3px 0 rgb(213, 61, 61);
+  }
 }
 
 .add{

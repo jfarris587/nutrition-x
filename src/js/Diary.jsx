@@ -12,11 +12,14 @@ const Diary = (props) => {
         {food.map((f, index) => (
           <Entry
             key = {index}
+            index = {index}
             name = {f.name}
             cal = {f.cal}
             carb = {f.carb}
             fat = {f.fat}
             protein = {f.protein}
+            selectedCategory = {props.selectedCategory}
+            selectEntry = {props.selectEntry}
           />
         ))}
       </div>

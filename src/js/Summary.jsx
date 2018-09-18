@@ -25,13 +25,15 @@ const Summary = (props) => {
       </div>
 
       <div className="navigation">
-        <button className="button trash"><i className="fas fa-trash-alt"></i></button>
+        <button className="button trash" onClick={props.deleteEntry}><i className="fas fa-trash-alt"></i></button>
         <button className="button add" onClick={()=>{props.addFood(props.selectedCategory)}}><i className="fas fa-plus"></i></button>
       </div>
 
       <Diary
         diary = {props.diary}
         selectedCategory = {props.selectedCategory}
+        selectEntry = {props.selectEntry}
+
       />
     </section>
   );
